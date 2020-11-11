@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/fondo2"
+    tools:context=".Productos.Producto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="ESTUDIANTES"
+            android:textColor="#F8F5F5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtIdProducto"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:ems="10"
+            android:hint="id"
+            android:inputType="number"
+            android:textColor="#020202"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/buscar"
+            android:onClick="Buscar"
+            android:text="Buscar"
+            android:textColor="#100F0F"
+            app:backgroundTint="@color/cardview_shadow_end_color" />
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Nombre"
+
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#7E595959"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="textPersonName"
+            android:textColor="#F6F3F3"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Telefono"
+            android:inputType="textPersonName"
+            android:textColor="#F4F3F3"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnClick"
+            android:text="REGISTRAR"
+            android:textColor="#FAF5F5"
+            app:backgroundTint="@color/purple_700" />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Modificar"
+            android:text="MODIFICAR"
+
+            android:textColor="#F8F4F4"
+            app:backgroundTint="@color/purple_700" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Eliminar"
+
+            android:text="ELIMINAR"
+            android:textColor="#FDF8F8"
+            app:backgroundTint="@color/purple_700" />
+
+        <Button
+            android:id="@+id/btnMostrarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Lista"
+            android:text="MOSTRAR"
+
+            android:textColor="#F8F0F0"
+            app:backgroundTint="@color/purple_700" />
+
+    </LinearLayout>
+
+</RelativeLayout>
